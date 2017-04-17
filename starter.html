@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>奥特为科技有限公司r</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/ionicons.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/csshake.min.css"/>
+  <link rel="stylesheet" href="css/animate.css"/>
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+  <link rel="stylesheet" href="css/skins/skin-blue.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>ATW</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>OUTWIT</b></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle icon_menu"  data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <span class="owt_logo"></span>
+      <div class="navbar-custom-menu">
+        <div class='clock'>
+          <div class='h shake shake-slow'></div>
+          <span>:</span>
+          <div class='m shake shake-slow'></div>
+          <!--<div class='s shake shake-slow'></div>-->
+        </div>
+      </div>
+      </nav>
+
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="img/62x62.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>奥特为科技</p>
+          <!-- Status -->
+        </div>
+      </div>
+
+      <!-- search form (Optional) -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="查找...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">主菜单</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="#"><i class="fa fa-dashboard"></i> <span>Link</span></a></li>
+        <li><a href="#"><i class="fa fa-files-o"></i> <span>Another Link</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-th"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Link in level 2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Version 1.0</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>主菜单</a></li>
+        <li class="active">折线图</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>9020</h3>
+
+              <p>Model</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-easel"></i>
+            </div>
+            <a href="#" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>1000<sup style="font-size: 20px">MHz</sup></h3>
+
+              <p>Center Freq</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>100<sup style="font-size: 20px">MHz</sup></h3>
+
+              <p>SPAN</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-gear-b"></i>
+            </div>
+            <a href="#" class="small-box-footer">More Info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>800</h3>
+
+              <p>Point</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <div class="row">
+        <section class="col-xs-12 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="nav-tabs-custom">
+            <!-- Tabs within a box -->
+            <ul class="nav nav-tabs pull-right">
+              <li class="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
+              <li class="pull-left header"><i class="fa fa-area-chart"></i> Canvas</li>
+            </ul>
+            <div class="tab-content no-padding">
+              <div id="main" style="width: 1200px;height:500px;margin:0 auto;"></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">IP/Port</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="input1" class="col-sm-2 control-label">IP</label>
+
+                  <div class="col-sm-9">
+                    <input  class="form-control" id="input1" placeholder="IP">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input2" class="col-sm-2 control-label">DataPort</label>
+
+                  <div class="col-sm-9">
+                    <input  class="form-control" id="input2" placeholder="DataPort">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="input3" class="col-sm-2 control-label">CmdPort</label>
+
+                    <div class="col-sm-9">
+                      <input  class="form-control" id="input3" placeholder="CmdPort">
+                    </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button class="btn btn-info pull-right" onclick="xiugai()">Sign in</button>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+          </div>
+          <!-- /select -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Cmd Select</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                      <label>Cmd</label>
+                      <select id="select" class="form-control select2" style="width: 100%;">
+                        <option value=":SENSE:FREQ:CENT " selected="selected">设置中心频率</option>
+                        <option value=":SENSE:FREQ:SPAN ">设置频率跨度</option>
+                        <option value=":SENSE:POW:RF:ATT:AUTO ">设置自动开启参考幅度ON|OFF</option>
+                        <option value=":SENSE:POW:RLEV ">设置参考幅度</option>
+                        <option value=":SENSE:POW:RF:DIV ">设置DIV</option>
+                        <option value=":SENSE:BAND:RES ">手动设置RBW</option>
+                        <option value=":SENSE:FFT:POIN ">设置FFT点数</option>
+                        <option value=":SENSE:SWP:TIME ">设置扫描时间(附单位：秒)</option>
+                        <option value=":SENSE:SWP:POIN ">设置扫描点数</option>
+                        <option value=":SENSE:DET:FUNC ">设置检波模式NORMAL|NEG|POS|SAMP</option>
+                        <option value=":SENSE:BAND:VID ">手动设置VBW</option>
+                        <option value=":SENSE:WAT:CS ">设定监测信道</option>
+                        <option value=":SENSE:WAT:STAT ">设定是否开启监测OFF|ON</option>
+                        <option value=":SENSE:WAT:SLMT:DELTAF ">设定展宽阈值</option>
+                        <option value=":SENSE:WAT:SLMT:NEWCAR ">设定新载波出现阈值(实际值*1000)</option>
+                        <option value=":SENSE:WAT:SLMT:TOP ">设定上门限值(实际值*1000)</option>
+                        <option value=":SENSE:WAT:SLMT:BTM ">设定下门限值(实际值*1000)</option>
+                        <option value=":SENSE:WAT:SLMT:DEL ">消失门限值 (实际值*1000)</option>
+                        <option value=":SENSE:WAT:SLMT:SETTEMP ">设置生成模板采集帧数</option>
+                      </select>
+                    </div>
+                  <div class="col-sm-6">
+                    <label>value</label>
+                    <input class="form-control" id="input4" placeholder="值与单位间用空格隔开">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="box-footer">
+              <button class="btn btn-info pull-right" onclick="tijiao()">Sign in</button>
+            </div>
+          </div>
+
+
+
+        </section>
+        <!-- /.Left col -->
+        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+        <section class="col-lg-5 connectedSortable">
+
+          <!-- Map box -->
+          <div class="box box-solid bg-light-blue-gradient">
+            <div class="box-header">
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-primary btn-sm daterange pull-right" data-toggle="tooltip" title="Date range">
+                  <i class="fa fa-calendar"></i></button>
+                <button type="button" class="btn btn-primary btn-sm pull-right" data-widget="collapse" data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+                  <i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /. tools -->
+
+              <i class="fa fa-map-marker"></i>
+
+              <h3 class="box-title">
+                Visitors
+              </h3>
+            </div>
+            <div class="box-body">
+              <div id="world-map" style="height: 250px; width: 100%;"></div>
+            </div>
+            <!-- /.box-body-->
+            <div class="box-footer no-border">
+              <div class="row">
+                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                  <div id="sparkline-1"></div>
+                  <div class="knob-label">Visitors</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                  <div id="sparkline-2"></div>
+                  <div class="knob-label">Online</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-4 text-center">
+                  <div id="sparkline-3"></div>
+                  <div class="knob-label">Exists</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+          </div>
+          <!-- /.box -->
+
+          <!-- solid sales graph -->
+          <div class="box box-solid bg-teal-gradient">
+            <div class="box-header">
+              <i class="fa fa-th"></i>
+
+              <h3 class="box-title">Sales Graph</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box-body border-radius-none">
+              <div class="chart" id="line-chart" style="height: 250px;"></div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer no-border">
+              <div class="row">
+                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                  <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC">
+
+                  <div class="knob-label">Mail-Orders</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                  <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC">
+
+                  <div class="knob-label">Online</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-4 text-center">
+                  <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgColor="#39CCCC">
+
+                  <div class="knob-label">In-Store</div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+
+
+
+        </section>
+        <!-- right col -->
+      </div>
+      <!-- /.row (main row) -->
+    </section>
+
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      V1.0
+    </div>
+    <!-- Default to the left -->
+  </footer>
+
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/highstock.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/dashboard.js"></script>
+<script src="js/application.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/small_box.js"></script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+<script>
+  var status=0;
+  var socket = io.connect();
+  //测试返回数据，连接成功
+  socket.on("test", function (data) {
+    //console.log(data);
+  });
+  var option = {
+    chart: {
+      renderTo: 'main',
+      type: 'spline',
+      animation:false
+      /* 图标类型 */
+    },
+    credits: {
+      enabled:false
+    },
+    title: {
+      text: ' ',
+      x: -20 //center
+    },
+
+    xAxis: {
+      gridLineWidth:1,
+      gridLineDashStyle:'Dot',
+      lables:{
+        step:5
+      }
+    },
+
+    yAxis: {
+      tickInterval: 10, //自定义刻度
+      max: -50, //纵轴的最大值
+      min: -120, //纵轴的最小值
+      title: {
+        text: 'AMPT(dbm)'
+      }
+
+    },
+    series: [{
+      name:'AMPT',
+      data: [],
+      tooltip:{
+        formatter: function() {
+          return '<b>'+ this.series.name +'</b><br/>'+
+                  this.x +' MHz: '+ this.y +'dbm';
+        }
+      }
+    },]
+
+  }
+  var chart =new Highcharts.Chart(option);
+  //接收转发数据，格式json
+  socket.on('pushToWebClient', function (useData) {
+    chart.xAxis[0].categories=useData.hz;
+    chart.series[0].setData(useData.dbm);
+
+  });
+  socket.on('disconnect', function() {
+
+  });
+
+
+
+  function tijiao(){
+    var index=document.getElementById("select").selectedIndex;
+    var select = document.getElementById("select").options[index].value;
+    var val = document.getElementById("input4").value;
+    var inputValue=select+val;
+    socket.emit('fromWebClient',inputValue);
+
+  }
+  function xiugai(){
+    var IPaddr= document.getElementById("input1").value;
+    var CmdPort= document.getElementById("input3").value;
+    var DataPort= document.getElementById("input2").value;
+    cmdData={"IPaddr":IPaddr,
+      "CmdPort":CmdPort,
+      "DataPort":DataPort
+    };
+    socket.emit('fromCmd',cmdData);
+  }
+</script>
+</body>
+</html>
